@@ -10,7 +10,7 @@
 
     , is:
         [ "An ion defining the visual appearance of wakatta."
-        , "It's syntax is as identical as possible to CSS."
+        , "Its syntax is as identical as possible to CSS."
         , "It could simplify interacting with CSS from JS."
 
         , "I'm not sure what value it gives beyond CSS DOM but I"
