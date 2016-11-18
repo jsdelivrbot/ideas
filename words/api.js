@@ -2,7 +2,7 @@
 
 +
 { re:
-    { id: "api@ionify.net.0.1.0.2016.11.18-08"
+    { id: "api@ionify.net.0.1.3.2016.11.18-08"
     , is: "A way to specify api: Application Programming Interface versions"
     , by:
         [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04", in: "forest-hills.ny.usa.na.earth"}
@@ -14,6 +14,7 @@
     { api
         : "id[.0.]version#.change#[.at][.in]" | ["api", "...", "api"]
 
+        + "api.0.#          means api's #th unsupported version"
         + "api.0.1          means api's 1st unsupported version"
         + "api.1.0          means api's 1st   supported version"
         + "api.0.2          means api's 2nd unsupported version"
@@ -21,6 +22,11 @@
         + "api.2.1          means api's 2nd   supported version's 1st change"
         + "api.3.5          means api's 3rd   supported version's 5th change"
         + "api.7.7.2016.11  means api's 7th   supported version's 7th change made November, 2016"
+
+        + "version# changes each time any apis change"
+        + "version# prfixed with 0. means this is an unsupported version;"
+        +   "i.e. its api may change or be abandoned without notice or support"
+        +   "and may be incompatible with other versions."
 
     , id: "id: name[@domain|ip],  see id@ionify"
     , at: "at: time,              see at@ionify"
