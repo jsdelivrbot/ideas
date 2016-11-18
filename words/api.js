@@ -12,11 +12,13 @@
 
   "api:version at:time in:space":
     { api
-        : "id[.0.]#.change#[.at][.in]" | ["api", "...", "api"]
+        : "id[.0.]version#.change#[.at][.in]" | ["api", "...", "api"]
 
+        + "api.0.1          means api's 1st unsupported version"
+        + "api.1.0          means api's 1st   supported version"
+        + "api.0.2          means api's 2nd unsupported version"
         + "api.0.2.1        means api's 2nd unsupported version's 1st change"
         + "api.2.1          means api's 2nd   supported version's 1st change"
-        + "api.1.0          means api's 1st   supported version"
         + "api.3.5          means api's 3rd   supported version's 5th change"
         + "api.7.7.2016.11  means api's 7th   supported version's 7th change made November, 2016"
 
