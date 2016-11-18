@@ -12,7 +12,7 @@
 
   "api:version at:time in:space":
     { api
-        : "name[.0.]#.change#[.at][.in]" | ["api", "api", "..."]
+        : "id[.0.]#.change#[.at][.in]" | ["api", "...", "api"]
 
         + "api.0.2.1        means api's 2nd unsupported version's 1st change"
         + "api.2.1          means api's 2nd   supported version's 1st change"
@@ -20,8 +20,9 @@
         + "api.3.5          means api's 3rd   supported version's 5th change"
         + "api.7.7.2016.11  means api's 7th   supported version's 7th change made November, 2016"
 
-    , at: "at:time,   see at@ionify"
-    , in: "in:space,  see in@ionify"
+    , id: "id: name[@domain|ip],  see id@ionify"
+    , at: "at: time,              see at@ionify"
+    , in: "in: space,             see in@ionify"
     }
 }
 
