@@ -41,7 +41,7 @@
         ,/    api.0-3.5        means api's 3rd  incompatible version's 5th unpublished change/
         ,/    api-3.5          means api's 3rd  incompatible version's 5th   published change/
 
-        ,/    api.7.7.2016.11  means api's 7th version's 7th   published change made November, 2016/
+        ,/    api.7.7.2016.11  means api's 7th    compatible version's 7th   published change made November, 2016/
         ]
 
     , id: "id: name[@domain|ip],  see id@ionify"
