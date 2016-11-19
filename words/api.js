@@ -23,6 +23,8 @@
         ,/    .change#   increases  on 1 or more api-safe change/
         ,/    .at        increases  on any                change/
 
+        ,/  API Examples:/
+
         ,/    api.0.#          means api's #th    compatible version;      unpublished/
         ,/    api.0-#          means api's #th  incompatible version;      unpublished/
 
