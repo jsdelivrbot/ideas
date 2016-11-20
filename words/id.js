@@ -2,11 +2,11 @@
 
 +
 { re:
-    { id: "id@ionify.net.0.1.0.2016.11.18-08"
+    { id: "id@ionify.net.0.1.0.2016.11.20-08"
     , is: "A way to identify things"
     , by:
-        [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04", in: "forest-hills.ny.usa.na.earth"}
-        , {editors:     "team@ions.ionify.net",  at: "2016.11.18", in:     "san-jose.ca.usa.na.earth"}
+        [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}
+        , {authors:     "team@ions.ionify.net",  at: "2016.11.20-08", in:     "san-jose.ca.usa.na.earth"}
         ]
     },
 
