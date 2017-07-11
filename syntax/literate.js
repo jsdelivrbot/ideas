@@ -1,18 +1,25 @@
 ;
 ~
 { re:
-    { id: "anemojii.2.0@ions.iskitz.net"
+    { id: "anemojii.0.3.0@ions.iskitz.net"
     , is: "animated emoji ions"
+
     , by: "mike.lee@iskitz"
-    , at: "2017.07.09-07...2015"
-    , it: "Demonstrates ion-based literate programming"
+    , at: "2017.07.11-07...2015"
+        ,
+      it: "Demonstrates ion-based literate programming"
+        ,
+      im: `...
+          `
     }
+
     ,
   do:
     [ "choose a random face"
     , "show that face"
     , "repeat after 1.5 seconds, 2014 times"
     ]
+
     ,
   faces:
     [ "+{'-':'-'};"
@@ -57,60 +64,39 @@
     , "+['๑˃̵ᴗ˂̵'];"
     , "+[' ͡° ʖ ͡°'];"
     , "+[' ͡° ͜ʖ ͡°'];"
+    , "+/(d ~ . ~ b)/;"
+    , "+/(d • . • b)/;"
+    , "+/(d - . - b)/;"
     ]
+
     ,
   "choose a random face":
-    function chooseFace (my)
-      { var faces   = my.faces
-          , face    = Math.random() * faces.length
-          ; face    = Math.floor (face)
-          ; my.face = faces [face]
+    function chooseFace ()
+      { var ion       = chooseFace.ion
+          , faces     = ion.faces
+          , face      = Math.random * faces.length
+          ; face      = Math.floor (face)
+          ; ion.face  = faces [face]
       }
     ,
+
   "show that face":
-    function showFace (my)
+    function showFace ()
       { document.title
       = document.body.innerHTML
-      = my.face
+      = showFace.ion.face
       }
     ,
+
   "repeat after 1.5 seconds, 2014 times":
-    function repeat (my)
-      { !repeat.my    && (repeat.my    = my)
-      ; !repeat.count ?  (repeat.count =  1)
-                      :   repeat.count++
-      ; if (repeat.count >= 2015) return
-      ; setTimeout (repeat, Math.random() * 1500)
-      ; (repeat.count == 1) && repeat.my.do.pop()
-      ~ repeat.my.do
-      }
-    ,
-  valueOf:
-    function go ()
-      { delete      this.valueOf
-      ; Object.prototype.valueOf = this.onION
-      ; Array .prototype.valueOf = this.onAEON
-      ; this.onAEON.of           = this
-      ; +this
-      }
-    ,
-  onION:
-    function onION ()
-      { var id = this.re ? this.re.id :this.id
-      ; id && +[`${id}`]
-      ; return +this.do || this
-      }
-    ,
-  onAEON:
-    function onAEON ()
-      { var anemojii = onAEON.of
-      ; for ( var act,next=-1,last=this.length
-            ; ++next < last
-            ; anemojii [act = this [next]]
-            ? anemojii [act] (anemojii)
-            : console.log (act)
-            )
-      ; return next / this.length
+    function repeat ()
+      { repeat.count ? ++repeat.count : (repeat.count = 1)
+
+        if (repeat.count >= 2015) return
+
+        setTimeout (repeat, Math.random * 1500)
+      ; (repeat.count == 1) && repeat.ion.do.pop()
+      ~ repeat.ion.do
       }
 }
 ;
