@@ -1,3 +1,3 @@
 ;
-~ {debug:!true, get:["literate"]}
+~ {debug:!true, get:["index"]}
 ;
