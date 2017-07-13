@@ -2,18 +2,32 @@
 
 +
 { re:
-    { id: "random.1@ionify"
+    { id: "random.0.1@ionify"
     , is: "A Random Number generator"
     , by: "mike.lee@iskitz"
-    , at: "2016.09.08...07-07"
-    , in:
-        [   "san-jose.california.usa.earth"
-        , "forest-hills.new-york.usa.earth"
-        ]
-    },
+    , at: "2017.07.13-07...2016.09.07-07"
 
-  on: "random",                                              // +{random:Number}
-  do:
+    , im: "Thinking of how to enable non-NaN ion return values for"
+
+             +{random:10} <= 7
+
+        ||" ionify doesn't currently do this in its +{} sensor because it"
+        + " senses & activates as many of all known actions as found within"
+        + " each which means multiple possible return values but ions evaluate"
+        + " as single-value numeric expressions."
+
+        + "I'll sense when an ion has only one matching action then return that"
+        + " singluar value. Multi-action ions can have all results saved in an"
+        + " ion.got property that maps actions to their results; initial idea:"
+
+            +{ get:"ion@domain", use:"member", as:"mine", in:"wrong.id@domain"
+             , got: {get:"yes", "use as in": {no:"no known ion with wrong.id"}}
+             }
+    }
+
+, on: "random"                                               // +{random:Number}
+
+, random:
     function onRandom (ion)
       {  var num = (Math.random () * ion.random + 1) | 0     // generates a random number between 1 + random
       ;  +{log:num}                                          // logs the number
