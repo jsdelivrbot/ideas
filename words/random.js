@@ -17,12 +17,8 @@
         + " as single-value numeric expressions."
 
         + "I'll sense when an ion has only one matching action then return that"
-        + " singluar value. Multi-action ions can have all results saved in an"
-        + " ion.got property that maps actions to their results; initial idea:"
-
-            +{ get:"ion@domain", use:"member", as:"mine", in:"wrong.id@domain"
-             , got: {get:"yes", "use as in": {no:"no known ion with wrong.id"}}
-             }
+        + " singluar value. Created ionify.todo to continue exploring"
+        + " multi-action ion results."
     }
 
 , on: "random"                                               // +{random:Number}
