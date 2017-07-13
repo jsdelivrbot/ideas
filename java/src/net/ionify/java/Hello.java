@@ -1,4 +1,4 @@
-package jsonxd.java;
+package net.ionify.java;
 
 /**
  * @author  Michael Lee

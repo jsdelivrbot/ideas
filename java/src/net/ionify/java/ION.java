@@ -1,4 +1,4 @@
-package jsonxd.java;
+package net.ionify.java;
 
 import java.lang.reflect.Method;
 
