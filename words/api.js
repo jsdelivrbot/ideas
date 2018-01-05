@@ -2,7 +2,7 @@
 
 +
 { re:
-    { id: "api@ionify.net.0.1.0.2017.11.17-08"
+    { id: "api.0.1.0.2017.11.17-08@ionify.net"
     , is: "Specifies 1 or more api: application programming interface versions"
     , by:
         [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}

@@ -2,7 +2,7 @@
 
 +
 { re:
-    { id: "id@ionify.net.0.1.0.2016.11.20-08"
+    { id: "id.0.1.0.2016.11.20-08@ionify.net"
     , is: "A way to identify things"
     , by:
         [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}
