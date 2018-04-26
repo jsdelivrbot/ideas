@@ -3,8 +3,8 @@ package net.ionify.java;
 import java.lang.reflect.Method;
 
 /**
- * @author  Michael Lee
- * @since   2015.10.29-07.00
+ * @author  Mike.Lee@iskitz
+ * @since   2018.04.26-07...2015.10.29-07.00
  *
  * Simple implementation of the ion: implicit object notation pattern in Java.
  */
@@ -26,6 +26,6 @@ public class ION
           { e.printStackTrace();
           }
 
-		return "";
+		return " " + input;
 	}
   }
