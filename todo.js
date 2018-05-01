@@ -1,20 +1,44 @@
 ;
+
 ~
 { re:
-    { id: "todo.ideas@ionify"
+    { id: 'todo.ideas@ionify'
     , is: "ionify's list of ideas To Do"
-    , by:["mike.lee@iskitz", "team@ionify"]
-    , at: "2018.01.04-08...2007.09-04"
+    , by:['mike.lee@iskitz', 'team@ionify']
+    , at: '2018.05.01-07...2007.09-04'
 
     , im:
         [`...
          `
-         ]
+        ]
     }
 
 , todo
-:   [ { "2018.__.__-08"
+:   [ { "20__.__.__-0_"
       :   { 
+          }
+          
+      , "2018.05.01-07"
+      :   { terminology
+          :   `itc may be supported by all languages that support operator overloading
+              ; see https://en.wikipedia.org/wiki/Operator_overloading
+              |
+              | NEW DEFINABLE
+              :
+              : ALGOL 68, Clojure, Eiffel, Fortran, F#, Haskell, Io, Perl 6, R, Scala
+              , Seed7, Smalltalk, Swift
+              |
+              | LIMITED SET
+              :
+              : Ada, C#, C++, Ceylon, D, Dart, FreeBASIC, Groovy, Lua, MATLAB
+              , Object Pascal (Free Pascal, Delphi (since 2005))
+              , PHP (using magic methods, ArrayAccess interface, or Operator extension)
+              , Perl, Python, Ruby, Rust, Visual Basic .NET
+              |
+              | For cross-language ion compatibility
+              :   noo itc: numeric operator overloading
+              :   goo itc: generic operator overloading
+              `
           }
           
       , "2018.01.12-08"
@@ -35,6 +59,7 @@
               `
           , notability
           :   `Contact Donald E. Knuth about ionify & literate programming.
+               May be pointless: https://www-cs-faculty.stanford.edu/~knuth/email.html
               `
           }
           
@@ -55,4 +80,5 @@
         ]
     }
 }
+
 ;
