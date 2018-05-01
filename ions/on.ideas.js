@@ -1,17 +1,41 @@
 ;
 ~
 { re:
-    { id: "on.ideas@ionify.net"
+    { id: 'on.ideas@ionify.net'
     , is: "An exploration of ionify's ~on action"
-    , by: "mike.lee@ionify"
-    , at: "2018.01.15-08...2007.09-08"
-    , in: "san-jose.california.usa"
+    , by: 'mike.lee@ionify'
+    , at: '2018.01.17-08...2007.09-08'
+    , in: 'san-jose.california.usa'
     }
 
 
 , ideas
 :   { minimal
-    :   ` At it's simplest, ~on needs a test & an action as its parameters
+    :   `Apps:`
+
+    +   /Senses Sensors, object types, once by setting Type.prototype.valueOf/
+    +   /id:'s kept as this type's name to enable its later usage via ~on,in:/
+    
+    +       {on:  Object, id:   'ion', do:Function|{}|[]|/./}
+    +       {on:   Array, id:  'aeon', do:Function|{}|[]|/./}
+    +       {on:  RegExp, id:'storie', do:Function|{}|[]|/./}
+    +       {on:   Error, id: 'error', do:Function|{}|[]|/./}
+    +       {on:Function, id:'action', do:Function|{}|[]|/./}
+    
+    +   /Senses ions by 1 of their parts, checked for every ion. in: states, /
+    +   /optionally, which sensor should be used to sense this ion:          /       
+    
+    +       {on:'part', in:'ion'|'aesop'|'storie', do:Function|{}|[]|/./}
+    
+    +   /./
+    +       {on:            ['par', 'ts'] ,          par       :'ion', ts:'ion'}
+    +       {on:            ['part sets'] ,         'part sets':'ion'          }
+    +       {on:[['space d', 'par    ts']], 'space d par    ts':'ion'          }
+    
+    +       {on: {name:'',type:'',value:''} , do:'ion'}
+    +       {on:[{name:'',type:'',value:''}], do:'ion'}
+    
+    +   ` At it's simplest, ~on needs a test & an action as its parameters
         . Both can be ions or the name of one of the ~on action's properties
         , where an ion is any object, including functions:
         `
@@ -26,7 +50,11 @@
 
     +   `Example usage:
         `
-    +       { on: "Objects"
+        
+    +       {
+            }
+            
+    +       { on: 'Objects'
             , do:
                 function onObject ()
                   { var ion   = onObject.ion
@@ -52,7 +80,7 @@
             :   {}
 
             , acts
-            :   {0:"onOn"}
+            :   {0:'onOn'}
 
             , notAnIon
             :   {object:true, function:true}
@@ -60,7 +88,7 @@
             , onOn
             :   { try
                 :   function hasOn (ion)
-                      { return "on" in ion
+                      { return 'on' in ion
                       }
                 , do
                 :   function onOn (ion)
