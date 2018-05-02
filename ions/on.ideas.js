@@ -1,11 +1,11 @@
 ;
 ~
 { re:
-    { id: "on.ideas@ionify.net"
+    { id: 'on.ideas@ionify.net'
     , is: "An exploration of ionify's ~on action"
-    , by: "mike.lee@ionify"
-    , at: "2018.01.15-08...2007.09-08"
-    , in: "san-jose.california.usa"
+    , by: 'mike.lee@ionify'
+    , at: '2018.05.02-07...2007.09-08'
+    , in: 'san-jose.california.usa'
     }
 
 
@@ -26,7 +26,7 @@
 
     +   `Example usage:
         `
-    +       { on: "Objects"
+    +       { on: 'Objects'
             , do:
                 function onObject ()
                   { var ion   = onObject.ion
@@ -52,15 +52,15 @@
             :   {}
 
             , acts
-            :   {0:"onOn"}
+            :   {0:'onOn'}
 
             , notAnIon
-            :   {object:true, function:true}
+            :   {boolean:true, number:true, string:true, undefined:true}
 
             , onOn
             :   { try
                 :   function hasOn (ion)
-                      { return "on" in ion
+                      { return 'on' in (ion || hasOn.on)
                       }
                 , do
                 :   function onOn (ion)
@@ -69,10 +69,12 @@
                       + / Add try & do to acts using that id      /
                       }
                 }
+
             , valueOf
             :   function go ()
                   { this.do.ion = this
-                  ; return this.do()
+                  ; this.Objects()
+                  ~ this
                   }
             }
     }
