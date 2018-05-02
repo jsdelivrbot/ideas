@@ -4,14 +4,38 @@
     { id: 'on.ideas@ionify.net'
     , is: "An exploration of ionify's ~on action"
     , by: 'mike.lee@ionify'
-    , at: '2018.05.02-07...2007.09-08'
+    , at: '2018.05.02-07...2007.09-04'
     , in: 'san-jose.california.usa'
     }
 
 
 , ideas
 :   { minimal
-    :   ` At it's simplest, ~on needs a test & an action as its parameters
+    :   `Apps:`
+
+    +   /Senses Sensors, object types, once by setting Type.prototype.valueOf/
+    +   /id:'s kept as this type's name to enable its later usage via ~on,in:/
+
+    +       {on:  Object, id:   'ion', do:Function|{}|[]|/./}
+    +       {on:   Array, id:  'aeon', do:Function|{}|[]|/./}
+    +       {on:  RegExp, id:'storie', do:Function|{}|[]|/./}
+    +       {on:   Error, id: 'error', do:Function|{}|[]|/./}
+    +       {on:Function, id:'action', do:Function|{}|[]|/./}
+
+    +   /Senses ions by 1 of their parts, checked for every ion. in: states, /
+    +   /optionally, which sensor should be used to sense this ion:          /
+
+    +       {on:'part', in:'ion'|'aesop'|'storie', do:Function|{}|[]|/./}
+
+    +   /./
+    +       {on:            ['par', 'ts'] ,          par       :'ion', ts:'ion'}
+    +       {on:            ['part sets'] ,         'part sets':'ion'          }
+    +       {on:[['space d', 'par    ts']], 'space d par    ts':'ion'          }
+
+    +       {on: {name:'',type:'',value:''} , do:'ion'}
+    +       {on:[{name:'',type:'',value:''}], do:'ion'}
+
+    +   ` At it's simplest, ~on needs a test & an action as its parameters
         . Both can be ions or the name of one of the ~on action's properties
         , where an ion is any object, including functions:
         `

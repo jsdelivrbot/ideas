@@ -1,14 +1,18 @@
 # id: python.proof@ideas.ionify.net
 # by: mike.lee@iskitz
-# at: 2018.01.13-08...2016.12.15-08
-# is: A proof that ion: implicit object notation can be implemented in Python. For the set of methods needed to fully implement ion in python see: https://docs.python.org/3.6/reference/datamodel.html#emulating-numeric-types
+# at: 2018.05.01-07...2016.12.15-08
+# is: A proof that ion: invoked object notation can be implemented in Python.
+#     For the set of methods needed to fully implement ion in python see:
+#     https://docs.python.org/3.6/reference/datamodel.html#emulating-numeric-types
 
 class Ion:
     def getName(self):
         return "python.hipion!"
 
     def __repr__(self):
-        print ('hipion!')
+        return '<hipion>'
+
+    def __str__(self):
         return 'hipion!'
 
     def __add__(self, other):
