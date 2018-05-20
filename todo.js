@@ -5,7 +5,7 @@
     { id: 'todo.ideas@ionify'
     , is: "ionify's list of ideas To Do"
     , by:['mike.lee@iskitz', 'team@ionify']
-    , at: '2018.05.02-07...2007.09-04'
+    , at: '2018.05.19-07...2007.09-04'
     , im:
         [`...
          `
@@ -15,6 +15,23 @@
 , todo
 :   [ { '20__.__.__-0_'
       :   {
+          }
+
+      , '2018.05.11-07'
+      :   { terminology
+          :   { itcandoo
+              :   'interactive type conversion'
+              +   'and'
+              +   'operator overloading'
+              , application
+              :   "ion & ionify can be implemented in itcandoo languages"
+              +   "that is, languages that support interactive type conversion and operator overloading"
+              }
+          }
+      , '2018.05.06-07'
+      :   { syntax
+          :   `{__proto__:null} is unsensed
+              `
           }
 
       , '2018.05.01-07'
