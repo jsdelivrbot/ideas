@@ -4,13 +4,40 @@
     { id: 'on.ideas@ionify.net'
     , is: "An exploration of ionify's ~on action"
     , by: 'mike.lee@ionify'
-    , at: '2018.05.02-07...2007.09-04'
+    , at: '2018.05.26-07...2007.09-04'
     , in: 'san-jose.california.usa'
     }
 
 
 , ideas
-:   { minimal
+:   { queries
+    :   `Ways to query an object's contents`
+    +       { on:
+                [ 'an.id@'          --> 'this ion via re.id'
+                , '.0'              --> 'on[1][1]'     --> 0
+                , '..1'             --> 'on[1]'
+                , '..0.length'      --> 'on[0].length' --> 6
+                , '...member'       --> 3
+                , '....submember'   --> 'n.s'
+                , '......submember' --> 'n.v.d.s'
+                , {'..':{type:'object',is:'...'}}      --> 'on[7]'
+                ]
+            , re    : {id:'an.id'}
+            , member: 3
+            , nested
+            :   { submember:'n.s'
+                , very
+                :   { deeply
+                    :   {submember:'n.v.d.s'}
+                    }
+                }
+            }
+    +   "preceding . = the current string"
+    +   "preceding .'s > 1  = ancestors"
+    +   "preceding .'s > # of ancestors   = root [sub-]members"
+    +   "following .'s > # of descendants = root [sub-]members"
+    
+    , minimal
     :   `Apps:`
 
     +   /Senses Sensors, object types, once by setting Type.prototype.valueOf/
