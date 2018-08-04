@@ -91,9 +91,9 @@
     ]
 
 , "choose a random face from the faces list"
-:   [" choose a face from the faces list by first generating a random"
-    +" number between 0 and the list's length. Next, use that number"
-  +" to select the face at the matching position within the list."
+:   " choose a face from the faces list by first generating a random"
++   " number between 0 and the list's length. Next, use that number"
++   " to select the face at the matching position within the list."
 +   " Lastly, save the chosen face as a property on the faces list to"
 +   " simplify accessing it from other actions."
 
