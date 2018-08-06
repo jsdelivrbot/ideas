@@ -17,6 +17,18 @@
       :   {
           }
 
+      , '2018.08.04-07'
+      :   { share
+          :   { site
+              :   'create ionify.net as ionify.about github page with'
+              +   ' team, api & things sections where things is about'
+              +   ' everything we create, maintain, support & influence.'
+              , api
+              :   'create js.ionify.net, java.ionify.net & python.ionify.net'
+              +   ' and to document ion & ionify implementation for each.'
+              }
+          }
+
       , '2018.08.03-07'
       :   { lingo
           :   'Create a readme section that lists lingo like itc & itcandoo'
