@@ -17,6 +17,35 @@
       :   {
           }
 
+      , '2018.08.11-07'
+      :   { app
+          :   { notes
+              :   [ 'focused on fast text input'
+                  , 'main view is a text area'
+                  , 'categorizing labels only appear after text inputted'
+                  , 'notes are displayed in trello-like card & check lists'
+                  , 'organization is secondary to input'
+                  , '¿ how to quickly & simply recall notes & lists ?'
+                  , "¿ maybe don't? just associate based on similar labels ?"
+                  , { client
+                    :   { display: 'webi  view: css & html | react | vue | web components'
+                        , deliver: 'ionic flow: data delivery to client & server'
+                        , define : 'ionic data: jems | jedi: json-expressed modules | ions'
+                        ,   twoD : 'define & deliver'
+                        , threeD : 'define , deliver & display'
+                        }
+                    , server
+                    :   { display: 'client display format: html & css | md | qml'
+                        , deliver: 'glitch.node + ionic request responses via text/javascript'
+                        , define : 'ionic data: jems | jedi'
+                        ,   twoD : 'define & deliver'
+                        , threeD : 'define , deliver & display'
+                        }
+                    }
+                  ]
+              }
+          }
+
       , '2018.08.04-07'
       :   { share
           :   { site
