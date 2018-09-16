@@ -37,7 +37,7 @@
     , is: "an ion : invoked object notation module that senses "
         + "stories: sentence template or regular [ion] expressions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.14-07'
+    , at: '2018.09.16-07...2018.09.14-07'
     }
 , valueOf
 :   function go ()
@@ -46,7 +46,7 @@
       }
 , onStorie
 :   function onStorie ()
-      { console.log ("I sensed this storie: ", this)
+      { console.log ("I sensed this storie: ", this.source)
       }
 }
 
@@ -56,12 +56,12 @@
     , is: "an ion: invoked object notation module that senses lists & activates "
         + "their ions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.14-07'
+    , at: '2018.09.16-07...2018.09.14-07'
     }
 , valueOf
 :   function go ()
       { Array.prototype.valueOf = this.onions
-      ~ [  { is:"the", first:"one" }
+      ~ [  { is:'the', first:'one' }
         ,  / is second /
         , [/ is fourth because its containing list is third /]
         ]
@@ -101,37 +101,39 @@
     { id: 'action.composer@ideas.ionify.net'
     , is: "an ion: invoked object notation module that composes actions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.14-07'
+    , at: '2018.09.16-07...2018.09.14-07'
     }
 , valueOf
 :   function go ()
       { Function.prototype.valueOf = this.action
-      ; this . action.this  = this
-      ~ this . composition  + this . stops > this.$
-      & this . resumes      > this . _
+      ; this. action.this = this
+      ~ this. composes    & this. stops | this. _
+      & this. restarts    | this. _
       }
 , action
 :   function action ()
-      { //console.log ("I sensed this action: ", this.name)
-      ; this != action.this.stop
-          && (  action.this.result = this (action.this.result)  )
+      { console.log ("I sensed this action: ", this.name)
+      ; action.this.result = this (action.this.result || '')
       }
 , _:function stop ()
-      {
+      { /*stops sharing by returning undefined*/
       }
-, composition
-:   function composition (something)
-      { console.log ("this composition", something || '')
-      ; return "with sharing"
-      }
+, composes
+:   function composes
+      (something)
+        { console.log ("this composition", something)
+        ; return "with sharing"
+        }
 , stops
-:   function stops (something)
-      { console.log (something, "can be controlled 🤓")
-            }
-, resumes
-:   function resumes (something)
-      { console.log ("and resumed", something || '')
-      }
+:   function stops
+      (something)
+        { console.log (something, "can be stopped 🤓")
+        }
+, restarts
+:   function restarts
+      (something)
+        { console.log ("and restarted", something)
+        }
 }
 
 ;
