@@ -4,9 +4,10 @@ import java.lang.reflect.Method;
 
 /**
  * @author  Mike.Lee@ionify.net
- * @since   2018.09.15-07...2015.10.29-07.00
+ * @since   2018.09.16-07...2015.10.29-07.00
  *
  * java reference implementation of ion: invoked object notation.
+ * play @ https://repl.it/@iskitz/ionproofjava
  */
 public class ION
   { public static  String $      = ""   ;
@@ -16,6 +17,12 @@ public class ION
     public
       ION ()
         { super ();
+        }
+
+    public
+      ION (Object input)
+        { this ()           ;
+          this.input = input;
         }
 
     public String
