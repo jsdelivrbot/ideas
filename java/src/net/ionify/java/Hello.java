@@ -1,10 +1,10 @@
 package net.ionify.java;
 
 /**
- * @author  Mike.Lee@iskitz
- * @since   2018.05.30-07...2015.10.29-07.00
+ * @author  Mike.Lee@ionify.net
+ * @since   2018.09.15-07...2015.10.29-07.00
  *
- * Sample code demonstrating the ion: implicit object notation pattern in Java.
+ * java ion: invoked object notation sample code.
  */
 public class Hello extends ION
   { public
@@ -26,8 +26,7 @@ public class Hello extends ION
             theWorld  = new Hello ("World"),
             ion       = new Hello (       );
 
-          go += "Say hello to" + you + ion + theWorld;
-          System.out.println (go)                    ;
+          $ += "Hello to" + you + ion + theWorld;
         }
 
     public void

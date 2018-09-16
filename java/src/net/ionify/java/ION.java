@@ -3,13 +3,13 @@ package net.ionify.java;
 import java.lang.reflect.Method;
 
 /**
- * @author  Mike.Lee@iskitz
- * @since   2018.05.30-07...2015.10.29-07.00
+ * @author  Mike.Lee@ionify.net
+ * @since   2018.09.15-07...2015.10.29-07.00
  *
- * Simple implementation of the ion: implicit object notation pattern in Java.
+ * java reference implementation of ion: invoked object notation.
  */
 public class ION
-  { public static  String go     = ""   ;
+  { public static  String $      = ""   ;
     public         Object input  = "ION";
     public         String action        ;
 
@@ -21,13 +21,13 @@ public class ION
     public String
       toString ()
         { try
-            { Method method = this.getClass()
+            { Method method = this.getClass          ()
                                   .getDeclaredMethod (action, (Class<?>[]) null);
               method.invoke  (this, (Object[]) null)                            ;
             }
           catch (Exception e)
             { e.printStackTrace ();
             }
-		return " " + input;
+		  return " " + input;
         }
   }
