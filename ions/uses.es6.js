@@ -5,19 +5,22 @@
     { id: 'ion.module@ideas.ionify.net'
     , is: "an ion: invoked object notation module"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
-    { console.log ("I contain my content, have a name, and can share it and automatically say this!")
+    { console.log ( "I contain my content, have a name, and can "
+                  + "share 🤲🏾 it & automatically say 🗣 this!"
+                  )
     }
 }
 
 ~
 { re:
     { id: 'ion.sensor@ideas.ionify.net'
-    , is: "an ion: invoked object notation module that senses other ions"
+    , is: "an ion: invoked object notation module that senses "
+        + "other ions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
     { Object.prototype.valueOf = this.onion
@@ -32,9 +35,9 @@
 { re:
     { id: 'storie.sensing.ion@ideas.ionify.net'
     , is: "an ion : invoked object notation module that senses "
-        + "stories: sentence template or regular [ion] expressions"
+        + "stories: sentence template or regular [ion] expressions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
     { RegExp.prototype.valueOf = this.onStorie
@@ -48,21 +51,21 @@
 ~
 { re:
     { id: 'list.sensing.ion@ideas.ionify.net'
-    , is: "an ion: invoked object notation module that senses lists & activates "
-        + "their ions"
+    , is: "an ion: invoked object notation module that senses "
+        + "lists & activates their ions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
     { Array.prototype.valueOf = this.onions
     ~ [  { is:'the', first:'one' }
       ,  / is second /
-      , [/ is fourth because its containing list is third /]
+      , [/ is fourth because its within a list that's third /]
       ]
     }
 , onions ()
     { console.log (`I sensed this list of ${this.length}`)
-    ; for (var last = this.length, ion = -1; ++ion < last; ~ this [ion]);
+    ; for (var next = 0; next < this.length; ~ this [next++]);
     }
 }
 
@@ -71,7 +74,7 @@
     { id: 'action@ideas.ionify.net'
     , is: "an ion: invoked object notation module that performs actions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
     { Function.prototype.valueOf = this.action
@@ -82,7 +85,7 @@
     ; this ()
     }
 , is_an_action ()
-    { console.log ("light's, camera, action!")
+    { console.log ("lights! ✨ camera! 🎥 action! 🎭")
     }
 }
 
@@ -91,37 +94,36 @@
     { id: 'action.composer@ideas.ionify.net'
     , is: "an ion: invoked object notation module that composes actions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.16-07...2018.09.14-07'
+    , at: '2018.09.17-07...2018.09.14-07'
     }
 , valueOf ()
-    { Function.prototype.valueOf = this.action
-    ; this. action.this  = this
-    ~ this. composes     & this. stops | this. _
-    & this. restarts     | this. _
+    { (Function.prototype.valueOf  = this.action).this = this
+    ;  with (this) ~ compose & share -_- reset
     }
 
 , _ ()
-    { /*stops sharing by returning undefined*/
+    { /*resets sharing by returning undefined*/
     }
 
 , action
 :   function action ()
-      { console.log (`I sensed this action: ${this.name}`)
+      { //console.debug (`I sensed this action: ${this.name}`)
       ; var composer        = action.this
       ;     composer.result = this (composer.result || '')                    
       }
-, composes
+, compose
     (something)
       { console.log (`this composition ${something}`)
-      ; return "with sharing "
+      ; return "shares 🤲🏾 "
       }
-, stops
+, share
     (something)
-      { console.log (`${something}can be stopped 🤓`)
+      { console.log (`${something}🎁`)
+      ; return something
       }
-, restarts
+, reset
     (something)
-      { console.log (`and restarted ${something}`)
+      { console.log (`it decides what & when it does ${something}by resetting via -_-`)
       }
 }
 
