@@ -113,7 +113,7 @@
     }
     ,
   _ /*-_-*/ ()
-    { // resets sharing by returning undefined*
+    { // resets sharing by returning undefined
     }
     ,
   action:
