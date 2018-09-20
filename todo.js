@@ -5,7 +5,7 @@
     { id: 'todo.ideas@ionify'
     , is: "ionify's list of ideas To Do"
     , by:['mike.lee@iskitz', 'team@ionify']
-    , at: '2018.08.04-07...2007.09-04'
+    , at: '2018.09.20-07...2007.09-04'
     , im:
         [`...
          `
@@ -15,6 +15,14 @@
 , todo
 :   [ { '20__.__.__-0_'
       :   {
+          }
+
+      , '2018.09.20-07'
+      :   {'operator inference'
+          :  "have ions always return a known value"
+          ,  "calculate the possible ion punctuation changes in that value"
+          ,  "save those in a map of values-to-operator"
+          ,  "get operator by matching the ion's return value within the map"
           }
 
       , '2018.08.11-07'
