@@ -112,8 +112,8 @@
     ;  with (this) ~ compose & share -_- reset
     }
     ,
-  _ ()
-    { /*resets sharing by returning undefined*/
+  _ /*-_-*/ ()
+    { // resets sharing by returning undefined*
     }
     ,
   action:
