@@ -5,9 +5,10 @@
     { id: 'ion.module@ideas.ionify.net'
     , is: "an ion: invoked object notation module"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
+    ,
+  valueOf ()
     { console.log ( "I contain my content, have a name, and can "
                   + "share 🤲🏾 it & automatically say 🗣 this!"
                   )
@@ -20,13 +21,15 @@
     , is: "an ion: invoked object notation module that senses "
         + "other ions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
+    ,
+  valueOf ()
     { Object.prototype.valueOf = this.onion
     ~ {hi:'🤓', there:'👋🏾'}
     }
-, onion ()
+    ,
+  onion ()
     { console.log (`I sensed this ion with these terms: ${Object.keys (this)}`)
     }
 }
@@ -37,13 +40,15 @@
     , is: "an ion : invoked object notation module that senses "
         + "stories: sentence template or regular [ion] expressions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
+    ,
+  valueOf ()
     { RegExp.prototype.valueOf = this.onStorie
     ~ / 👋🏾 hi 🤓 there! /
     }
-, onStorie ()
+    ,
+  onStorie ()
     { console.log (`I sensed this storie: ${this.source}`)
     }
 }
@@ -54,16 +59,18 @@
     , is: "an ion: invoked object notation module that senses "
         + "lists & activates their ions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
+    ,
+  valueOf ()
     { Array.prototype.valueOf = this.onions
     ~ [  { is:'the', first:'one' }
       ,  / is second /
       , [/ is fourth because its within a list that's third /]
       ]
     }
-, onions ()
+    ,
+  onions ()
     { console.log (`I sensed this list of ${this.length}`)
     ; for (var next = 0; next < this.length; ~ this [next++]);
     }
@@ -72,19 +79,22 @@
 ~
 { re:
     { id: 'action@ideas.ionify.net'
-    , is: "an ion: invoked object notation module that performs actions"
+    , is: "an ion: invoked object notation module that senses & performs acts"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
+    ,
+  valueOf ()
     { Function.prototype.valueOf = this.action
-    ~ this.is_an_action
+    ~ this.act
     }
-, action ()
+    ,
+  action ()
     { console.log (`I sensed this action: ${this.name}`)
     ; this ()
     }
-, is_an_action ()
+    ,
+  act ()
     { console.log ("lights! ✨ camera! 🎥 action! 🎭")
     }
 }
@@ -94,36 +104,42 @@
     { id: 'action.composer@ideas.ionify.net'
     , is: "an ion: invoked object notation module that composes actions"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.17-07...2018.09.14-07'
+    , at: '2018.09.20-07...2018.09.14-07'
     }
-, valueOf ()
-    { (Function.prototype.valueOf  = this.action).this = this
+    ,
+  valueOf ()
+    { (Function.prototype.valueOf  = this.action).ion = this
     ;  with (this) ~ compose & share -_- reset
     }
-
-, _ ()
+    ,
+  _ ()
     { /*resets sharing by returning undefined*/
     }
-
-, action
-:   function action ()
+    ,
+  action:
+    function action ()
       { //console.debug (`I sensed this action: ${this.name}`)
-      ; var composer        = action.this
+      ; var composer        = action.ion
       ;     composer.result = this (composer.result || '')                    
       }
-, compose
+      ,
+  compose
     (something)
       { console.log (`this composition ${something}`)
       ; return "shares 🤲🏾 "
       }
-, share
+      ,
+  share
     (something)
       { console.log (`${something}🎁`)
       ; return something
       }
-, reset
+      ,
+  reset
     (something)
-      { console.log (`it decides what & when it does ${something}by resetting via -_-`)
+      { console.log ( `it decides what & when it does ${something}by resetting via -_- `
+                    + 'as needed'
+                    )
       }
 }
 
