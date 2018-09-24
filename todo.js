@@ -18,11 +18,12 @@
           }
 
       , '2018.09.20-07'
-      :   {'operator inference'
-          :  "have ions always return a known value"
-          ,  "calculate the possible ion punctuation changes in that value"
-          ,  "save those in a map of values-to-operator"
-          ,  "get operator by matching the ion's return value within the map"
+      :   { 'operator inference'
+          :   [ "have ions always return a known value"
+              , "calculate the possible ion punctuation changes in that value"
+              , "save those in a map of values-to-operator"
+              , "get operator by matching the ion's return value within the map"
+              ]
           }
 
       , '2018.08.11-07'
