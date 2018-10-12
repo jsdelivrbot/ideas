@@ -5,12 +5,12 @@
     { id: 'ion.module@ideas.ionify.net'
     , is: "an ion: invoked object notation module"
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.20-07...2018.09.14-07'
+    , at: '2018.10.12+09...2018.09.14-07'
     }
     ,
   valueOf ()
-    { console.log ( "I contain my content, have a name, and can "
-                  + "share 🤲🏾 it & automatically say 🗣 this!"
+    { console.log ( "I'm unobtrusive, compatibly named, self-contained, "
+                  + "observable & automatically invoked!"
                   )
     }
 }
@@ -40,12 +40,13 @@
     , is: "an ion : invoked object notation module that senses "
         + "stories: sentence template or regular [ion] expressions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.20-07...2018.09.14-07'
+    , at: '2018.10.12+09...2018.09.14-07'
     }
     ,
   valueOf ()
     { RegExp.prototype.valueOf = this.onStorie
-    ~ / 👋🏾 hi 🤓 there! /
+    ~  / 👋🏾 hi 🤓 there! /
+    <- / sensible comment /
     }
     ,
   onStorie ()
@@ -59,14 +60,14 @@
     , is: "an ion: invoked object notation module that senses "
         + "lists & activates their ions."
     , by: 'mikelee@ionify.net'
-    , at: '2018.09.20-07...2018.09.14-07'
+    , at: '2018.10.12+09...2018.09.14-07'
     }
     ,
   valueOf ()
     { Array.prototype.valueOf = this.onions
     ~ [  { is:'the', first:'one' }
       ,  / is second /
-      , [/ is fourth because its within a list that's third /]
+      , [/ is fourth because it's within a list that's third /]
       ]
     }
     ,
