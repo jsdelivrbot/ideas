@@ -17,6 +17,14 @@
       :   {
           }
 
+      , '2018.09.24-07'
+      :   { templates
+          :   {my:'data', is:'${my}'}
+          +   [ ". use template strings to support in-ion references"
+              , ". accept as normal strings then evaluate as templates using with (this)"
+              ]
+          }
+
       , '2018.09.20-07'
       :   { 'operator inference'
           :   [ "have ions always return a known value"
