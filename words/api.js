@@ -2,12 +2,16 @@
 
 +
 { re:
-    { id: "api.0.1.0.2017.11.17-08@ionify.net"
-    , is: "Specifies 1 or more api: application programming interface versions"
+    { id: "api@ionify.net"
+    , is: "a definition of one or more api: application programming interface versions"
+    , at: 1.011
     , by:
-        [ {creator: "mike.lee@ions.iskitz.net",  at: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}
-        , {authors:     "team@ions.ionify.net",  at: "2017.11.17-08", in:     "san-jose.ca.usa.na.earth"}
+        [ {creator: "mike.lee@ions.iskitz.net",  on: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}
+        , {authors:     "team@ions.ionify.net",  on: "2018.10.20+09", in:     "san-jose.ca.usa.na.earth"}
         ]
+    , it: "uses actual numbers where the whole # is the version, the decimal is the change, "
+        + "version.0change means an unsupported change & -version.change means"
+        + "incompatibility with one or more earlier versions."
     },
 
   "re.api: id.version .at:time .in:space":
