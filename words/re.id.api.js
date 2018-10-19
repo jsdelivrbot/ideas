@@ -2,19 +2,19 @@
 
 +
 { re:
-    { id: "api@ionify.net"
+    { id: 're.id.api@ionify.net'
     , is: "a definition of one or more api: application programming interface versions"
     , at: 1.011
     , by:
-        [ {creator: "mike.lee@ions.iskitz.net",  on: "2007.09-04",    in: "forest-hills.ny.usa.na.earth"}
-        , {authors:     "team@ions.ionify.net",  on: "2018.10.20+09", in:     "san-jose.ca.usa.na.earth"}
+        [ {creator: 'mike.lee@ions.iskitz.net',  on: -04.200709,   in: 'forest-hills.ny.usa.na.earth'}
+        , {authors:     'team@ions.ionify.net',  on: +09.20181020, in:     'san-jose.ca.usa.na.earth'}
         ]
-    , it: "uses actual numbers where the whole # is the version, the decimal is the change, "
+    , it: "uses valid numbers where the whole # is the version, the decimal is the change, "
         + "version.0change means an unsupported change & -version.change means"
         + "incompatibility with one or more earlier versions."
     },
 
-  "re.api: id.version .at:time .in:space":
+  'id .[-]version.[0]change .on:moment .in:space':
     { api:
         [/  id[.0][.-]version#[.change#][.at][.in] || ["api", "...", "api"]/
 
@@ -48,8 +48,8 @@
         ,/    api.7.7.2016.11  means api's 7th    compatible version's 7th   supported change made November, 2016/
         ]
 
-    , id: "id: name[@domain|ip],  see id@ionify"
-    , at: "at: time,              see at@ionify"
+    , id: "id: name[@domain|ip],  see re.id@ionify"
+    , at: "at: time,              see re.moment@ionify"
     , in: "in: space,             see in@ionify"
     }
 }
