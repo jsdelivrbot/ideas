@@ -6,8 +6,8 @@
     , is: "a definition of one or more api: application programming interface versions"
     , at: 1.011
     , by:
-        [ {creator: 'mike.lee@ions.iskitz.net',  on: -04.200709,   in: 'forest-hills.ny.usa.na.earth'}
-        , {authors:     'team@ions.ionify.net',  on: +09.20181020, in:     'san-jose.ca.usa.na.earth'}
+        [ {creator: 'mike.lee@ions.iskitz.net',  on: -4.200709,   in: 'forest-hills.ny.usa.na.earth'}
+        , {authors:     'team@ions.ionify.net',  on: +9.20181020, in:     'san-jose.ca.usa.na.earth'}
         ]
     , it: "uses valid numbers where the whole # is the version, the decimal is the change, "
         + "version.0change means an unsupported change & -version.change means"
