@@ -4,10 +4,14 @@
 { re:
     { id: 're.id.api@ionify.net'
     , is: "a definition of one or more api: application programming interface versions"
-    , at: 1.011
-    , by:
-        [ {creator: 'mike.lee@ions.iskitz.net',  on: -4.200709,   in: 'forest-hills.ny.usa.na.earth'}
-        , {authors:     'team@ions.ionify.net',  on: +9.20181020, in:     'san-jose.ca.usa.na.earth'}
+    , by:['mike.lee@ionify', 'team@ionify']
+    , on: -7.201304071630
+    , to: -8.201811170159
+    , at: -0.12
+    , in:
+        [ 'forest-hills.ny.us.earth'
+        ,     'san-jose.ca.us.earth'
+        ,           'tokyo.jp.earth'
         ]
     , it: "uses valid numbers where the whole # is the version, the decimal is the change, "
         + "version.0change means an unsupported change & -version.change means"
@@ -45,7 +49,9 @@
         ,/    api.0-3.5        means api's 3rd  incompatible version's 5th unsupported change/
         ,/    api-3.5          means api's 3rd  incompatible version's 5th   supported change/
 
-        ,/    api.7.7.2016.11  means api's 7th    compatible version's 7th   supported change made November, 2016/
+        ,/    api.7.7.2016.11  means api's 7th    compatible version's 7th   supported change made November  , 2016/
+        
+        ,/    api.0.1+9.20181018  is api's 1st    compatible version;      unsupported        made October 18, 2018 in UTC+9 timezone/
         ]
 
     , id: "id: name[@domain|ip],  see re.id@ionify"
