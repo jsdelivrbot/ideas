@@ -2,19 +2,47 @@
 
 ~
 { re:
-    { id: 'todo.ideas@ionify'
-    , is: "ionify's list of ideas To Do"
-    , by:['mike.lee@iskitz', 'team@ionify']
-    , at: '2018.09.20-07...2007.09-04'
-    , im:
-        [`...
-         `
+    { id:  'todo.ideas'
+    , by: ['mike.lee', 'team']
+    , at:  'ionify.net'
+    , on:  -4.200709
+    , to:  -8.20181122
+    , is:  -0.1
+    , it:  "stores ionify's ideas of things to do"
+    , we:
+        [/ need ... /
+        ,/ will ... /
+        ,/ like ... /
+        ,/ want ... /
+        ,/ wish ... /
         ]
     }
 
 , todo
 :   [ { '20__.__.__-0_'
       :   {
+          }
+
+      , '-8.20181122'
+      :   { do
+          :   [ "! maybe provide a do|$ (ion) method on ion's methods"
+              , "! it enables passing ions that will activate later"
+              , '       this.do ([{debug:""},{next:"ion", id:ion}])'
+              ]
+          , log
+          :   [ ". provide as method or array on ion member methods"
+              , ". enables tracking with minimal runtime sideffects"
+              , ". enable decision about when to actually publish log"
+              +         console.log ({message:"...", show:Boolean})
+              , ". publishing clears in-memory logs"
+              ]
+          , share
+          :   [ ". distinguish between global & internal ion apis"
+              +         {on   :'api.global'  }
+              +         {share:'api.internal'}
+              , ". simplifies debugging by via synchronous flow"
+              , ". enables handling separately from ion flow"
+              ]
           }
 
       , '2018.09.24-07'
@@ -78,24 +106,24 @@
       , '2018.08.03-07'
       :   { lingo
           :   'Create a readme section that lists lingo like itc & itcandoo'
-          
+
           , terms
           :   { ion     : 'invoked object notation,'
                         + ' enables writing independently observable & notifiable'
                         + ' data and code.'
-                        
+
               , support : 'ion can be implemented via interactive type conversion'
                         + ' and operator overloading in supporting languages.'
                         + " It's supported by hip-hop & hot itc in js & java"
                         + ' respectively, and operator overloading in python to'
                         + ' name a few.'
-                        
+
               , itcandoo: 'interactive type conversion and operator overloading'
               , itc     : 'interactive type conversion is interacting with one or more types during their conversion'
-              
+
               , ionify  : 'ion implemented for you, is an api for ion interaction'
                         + ', observation & notification'
-                        
+
               , hip     : 'handled in-place'
               , hop     : 'handled on prototype'
               , hot     : 'handled on type'
@@ -105,7 +133,7 @@
               , jedi    : 'json-expressed   ion'
               , oj      : 'observable      json'
               , im      : 'ion module'
-              
+
               , ai      : 'anonymous        ion'
               , ai      : 'accessible       ion'
               , li      : 'literal          ion'
@@ -114,7 +142,7 @@
               , nion    : 'named            ion'
               , union   : 'unnamed          ion'
               , anion   : 'anonymous        ion'
-              
+
               , ionify  : 'ion interpreted for you'
               , ionify  : 'ion interfaces  for you'
               , hip     : 'held in-place'
@@ -123,17 +151,17 @@
               , foo     : 'functional operator overloading'
               , goo     : 'generic    operator overloading'
               }
-          
+
           , loops
           :   ~
               { redo :'step'
               , until: 2055 || 761 || 2055
-              
+
               , step
               :   function step ()
                     { console.log ('redos: '+this.until)
                     }
-                    
+
               , valueOf
               :   function ionify ()
                     {// ionify.ion = this
@@ -145,7 +173,7 @@
                     &&  this [this.redo] ()
                     &   this/* || 0
                     &!  function(){~ionify.ion}()*/
-                    } 
+                    }
               }
           }
 
@@ -189,14 +217,14 @@
                   + {id:'stori', on:RegExp, do:Function|| {}||[]}
                   +
               `sense@ionify defines what's common among all ions
-              
+
                            id: uniquely identifies ions
                         do_on: actions to do
-                      dont_on: actions to 
+                      dont_on: actions to
                   this|ion|id: ion member's reference to their containing ion
-                  
+
                   ? how to support synonyms like .this, .ion & .id
-                  
+
               .host@ionify are ionify's environment starting points
               `
           }
@@ -205,7 +233,7 @@
       :   { function
           :   { sensing
               :   `Enable ajile's recall (past-sensing) via
-              
+
                    0: ion-recall requests
                   `
                       +
@@ -228,8 +256,8 @@
                       , 'ion.id.unique.other': String || 'ion message or uri'
                       }
                       +
-                  ` 
-                   2: adding ion's recall sensor 
+                  `
+                   2: adding ion's recall sensor
                   `
               }
           }
@@ -319,15 +347,15 @@
               :   "invoked object notation is a software language syntax for"
               +   " expressing data & code as independent, observable &"
               +   " notifiable objects"
-              
+
               |   "invoked object notation is a software language syntax for"
               +   " expressing data & code as indirectly observable &"
               +   " notifiable objects"
-              
+
               , ionify
               :   "ions interpreted for you is an api for interpreting "
               +   " invoked object notations"
-              
+
               , itcandoo
               :   {'itc: interactive type conversion'
                   :   "is the software language capability that enables"
@@ -340,7 +368,7 @@
                   +   " defining how an operator interacts with one or more"
                   +   " datatypes"
                   }
-              
+
               , application
               :   "ions can be used & ionify can be implemented in, itcandoo"
               +   " software languages, that is, languages that support"
