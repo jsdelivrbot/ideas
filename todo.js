@@ -1,14 +1,13 @@
 ;
-
 ~
 { re:
     { id:  'todo.ideas'
     , by: ['mike.lee', 'team']
     , at:  'ionify.net'
     , on:  -4.200709
-    , to:  -8.20181122
+    , to:  -8.20181204
     , is:  -0.1
-    , it:  "stores ionify's ideas of things to do"
+    , it:  "lists ionify's ideas to explore."
     , we:
         [/ need ... /
         ,/ will ... /
@@ -404,7 +403,12 @@
               `
           }
 
-      , '2018.04.20-07'
+      , '-7.20180423'
+      :   { launch
+          :   " like that ~/0 . 0/ = ionify - onload + this.test ('0 . 0') confirms. "
+          }
+
+      , '-7.20180420'
       :   { aesop
           :   `match actions by which is most inclusive of others, i.e.
                match ~get,in,then for:
@@ -471,5 +475,4 @@
         ]
     }
 }
-
 ;
